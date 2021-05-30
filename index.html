@@ -101,9 +101,18 @@
         <script>
             function addDarkmodeWidget() 
             {
-                new Darkmode({label:'&#x1F313;',autoMatchOsTheme:true,saveInCookies:true}).showWidget();
+                new Darkmode
+                (
+                    {
+                        label:'&#x1F313;',autoMatchOsTheme:true,saveInCookies:true
+                    }
+                )
+                .showWidget();
             }
-            window.addEventListener('load', addDarkmodeWidget);
+            window.addEventListener
+            (
+                'load', addDarkmodeWidget
+            );
         </script>
 
     </head>
