@@ -4,9 +4,19 @@
     <head>
         <meta charset="utf-8" />
 
-        <!--Resetting scaling-->
+        <!-- Resetting scaling -->
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+        <!-- Tablesorter files -->
+        <!-- theme file -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/css/theme.default.min.css">
+
+        <!-- load jQuery and tablesorter scripts -->
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js"></script>
+
+        <!-- tablesorter widgets (optional) -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.widgets.min.js"></script>
         <title>
             预选手机列表
         </title>
@@ -23,9 +33,40 @@
                 text-align: center;
             }
 
-            #td-center
+            table
+            {
+                border: solid 2px gray;
+            }
+
+            h1
             {
                 text-align: center;
+            }
+
+            #table1
+            {
+                text-align: center;
+            }
+
+            .table2
+            {
+                padding: 1.5vw !important;
+            }
+
+            .table3
+            {
+                padding: 1vw;
+            }
+
+            .tr1
+            {
+                border-top: solid 1px #cccccc;
+                border-bottom: solid 1px #cccccc;
+            }
+
+            .tr2
+            {
+                border-top:solid 1px #cccccc;;
             }
 
             /* Adaptation for different screen resolutions */
@@ -34,9 +75,7 @@
             { 
                 table
                 {
-                    border-style: solid;
-                        border-width: 2px;
-                        border-color: gray;
+                    font-size: unset !important;
                 }
             } 
 
@@ -44,10 +83,7 @@
             { 
                 table
                 {
-                    font-size: 4vw;
-                    border-style: solid;
-                        border-width: 2px;
-                        border-color: gray;
+                    font-size: 4vw !important;
                 } 
             } 
 
@@ -55,10 +91,7 @@
             { 
                 table
                 {
-                    font-size: 3vw;
-                    border-style: solid;
-                        border-width: 2px;
-                        border-color: gray;
+                    font-size: 3vw !important;
                 } 
             }
 
@@ -67,24 +100,16 @@
             {
                 h1
                 {
-                    text-align: center;
                     font-size: 8vw;
                 } 
-            }
-
-            @media screen and (min-width: 425px)
-            {
-                h1 
-                {
-                    text-align: center;
-                }   
             }
             
             /* Table alignment */
             #div0
             {
-                display: inline;
-                padding: 6px;
+                display: inline-flex;
+                align-items: center;
+                padding: 5px;
             }
     
             #div1
@@ -96,23 +121,15 @@
             }
         </style>
 
-        <!--Dark Mode-->
+        <!-- Dark Mode -->
         <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
         <script>
-            function addDarkmodeWidget() 
-            {
-                new Darkmode
-                (
-                    {
-                        label:'&#x1F313;',autoMatchOsTheme:true,saveInCookies:true
-                    }
-                )
-                .showWidget();
-            }
-            window.addEventListener
-            (
-                'load', addDarkmodeWidget
-            );
+            function addDarkmodeWidget(){new Darkmode({label:'&#x1F313;',autoMatchOsTheme:true,saveInCookies:true}).showWidget();}window.addEventListener('load', addDarkmodeWidget);
+        </script>
+        
+        <!-- Tablesorter -->
+        <script>
+            $(function(){$("#phones").tablesorter();});
         </script>
 
     </head>
@@ -134,108 +151,114 @@
 
         <div id="div1">
             <div id="div0">
-                <table id="phones" rules=none cellpadding="5" cellspacing="2">
+                <table title="phones" id="phones" class="tablesorter" rules=none>
+                <thead>
                     <tr>
-                        <th>设备</th>
-                        <th>价格</th>
-                        <th>容量</th>
-                        <th>备注</th>
+                        <th class="table2">设备</th>
+                        <th class="table2">价格</th>
+                        <th class="table2">容量</th>
+                        <th class="table2">备注</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td id="table1" class="table2">iQOO U3x</td>
+                        <td class="table2">￥1199.00</td>
+                        <td class="table2">6G + 64G</td>
+                        <td class="table2"></td>
                     </tr>
 
                     <tr>
-                        <td id="td-center">iQOO U3x</td>
-                        <td>￥1199.00</td>
-                        <td>6G + 64G</td>
-                        <td></td>
+                        <td id="table1" class="table2">OPPO A52</td>
+                        <td class="table2">￥1399.00</td>
+                        <td class="table2">8G + 128G</td>
+                        <td class="table2"></td>
                     </tr>
 
                     <tr>
-                        <td id="td-center">OPPO A52</td>
-                        <td>￥1399.00</td>
-                        <td>8G + 128G</td>
-                        <td></td>
+                        <td id="table1" class="table2">OPPO Reno2 Z</td>
+                        <td class="table2">￥1119.00</td>
+                        <td class="table2">8G + 128G</td>
+                        <td class="table2"><a href="https://item.jd.com/68910172308.html">京东二手</a></td>
                     </tr>
 
                     <tr>
-                        <td id="td-center">OPPO Reno2 Z</td>
-                        <td>￥1119.00</td>
-                        <td>8G + 128G</td>
-                        <td><a href="https://item.jd.com/68910172308.html">京东二手</a></td>
+                        <td id="table1" class="table2">realme Q3</td>
+                        <td class="table2">￥1299.00</td>
+                        <td class="table2">6G + 128G</td>
+                        <td class="table2"></td>
                     </tr>
 
                     <tr>
-                        <td id="td-center">realme Q3</td>
-                        <td>￥1299.00</td>
-                        <td>6G + 128G</td>
-                        <td></td>
+                        <td id="table1" class="table2">Xiaomi MIX 2s</td>
+                        <td class="table2">￥859.00</td>
+                        <td class="table2">6G + 128G</td>
+                        <td class="table2"><a href="https://item.jd.com/10027506717470.html">京东二手</a></td>
                     </tr>
 
                     <tr>
-                        <td id="td-center">Xiaomi MIX 2s</td>
-                        <td>￥859.00</td>
-                        <td>6G + 128G</td>
-                        <td><a href="https://item.jd.com/10027506717470.html">京东二手</a></td>
-                    </tr>
-
-                    <tr>
-                        <td id="td-center">Meizu 16th</td>
-                        <td>￥989.00</td>
-                        <td>6G + 64G</td>
-                        <td><a href="https://item.jd.com/10020193715761.html">京东二手</a></td>
+                        <td id="table1" class="table2">Meizu 16th</td>
+                        <td class="table2">￥989.00</td>
+                        <td class="table2">6G + 64G</td>
+                        <td class="table2"><a href="https://item.jd.com/10020193715761.html">京东二手</a></td>
                     </tr>
                     <tr>
-                        <td id="td-center">Xiaomi MIX 3</td>
-                        <td>￥1109.00</td>
-                        <td>6G + 128G</td>
-                        <td><a href="https://item.jd.com/70281232985.html">京东二手</a></td>
+                        <td id="table1" class="table2">Xiaomi MIX 3</td>
+                        <td class="table2">￥1109.00</td>
+                        <td class="table2">6G + 128G</td>
+                        <td class="table2"><a href="https://item.jd.com/70281232985.html">京东二手</a></td>
                     </tr>
+                </tbody>
                 </table>
             </div>
 
             <div id="div0">
-                <table id="param" rules=none cellpadding="5" cellspacing="2">
+                <table title="param" rules=rows>
+                <tbody>
                     <tr>
-                        <th style=text-align:center; colspan="2">机型参数</th>
+                        <th style=text-align:center; colspan="2" class="table3">机型参数</th>
                     </tr>
 
-                    <tr>
-                        <td id="td-center">iQOO U3x</td>
-                        <td><a href="https://detail.zol.com.cn/1364/1363711/param.shtml">中关村在线</td>
+                    <tr class="tr1">
+                        <td id="table1" class="table3">iQOO U3x</td>
+                        <td class="table3"><a href="https://detail.zol.com.cn/1364/1363711/param.shtml">中关村在线</td>
                     </tr>
 
-                    <tr>
-                        <td id="td-center">OPPO A52</td>
-                        <td><a href="https://detail.zol.com.cn/1320/1319916/param.shtml">中关村在线</td>
+                    <tr class="tr1">
+                        <td id="table1" class="table3">OPPO A52</td>
+                        <td class="table3"><a href="https://detail.zol.com.cn/1320/1319916/param.shtml">中关村在线</td>
                     </tr>
 
-                    <tr>
-                        <td id="td-center">OPPO Reno2 Z</td>
-                        <td><a href="https://detail.zol.com.cn/1290/1290000/param.shtml">中关村在线</td>
+                    <tr class="tr1">
+                        <td id="table1" class="table3">OPPO Reno2 Z</td>
+                        <td class="table3"><a href="https://detail.zol.com.cn/1290/1290000/param.shtml">中关村在线</td>
                     </td>
 
-                    <tr>
-                        <td id="td-center">realme Q3</td>
-                        <td><a href="https://detail.zol.com.cn/1368/1367130/param.shtml">中关村在线</td>
+                    <tr class="tr1">
+                        <td id="table1" class="table3">realme Q3</td>
+                        <td class="table3"><a href="https://detail.zol.com.cn/1368/1367130/param.shtml">中关村在线</td>
                     </tr>
 
-                    <tr>
-                        <td id="td-center">Xiaomi MIX 2s</td>
-                        <td><a href="https://detail.zol.com.cn/1203/1202983/param.shtml">中关村在线</td>
+                    <tr class="tr1">
+                        <td id="table1" class="table3">Xiaomi MIX 2s</td>
+                        <td class="table3"><a href="https://detail.zol.com.cn/1203/1202983/param.shtml">中关村在线</td>
                     </tr>
 
-                    <tr>
-                        <td id="td-center">Meizu 16th</td>
-                        <td><a href="https://detail.zol.com.cn/1213/1212228/param.shtml">中关村在线</td>
+                    <tr class="tr1">
+                        <td id="table1" class="table3">Meizu 16th</td>
+                        <td class="table3"><a href="https://detail.zol.com.cn/1213/1212228/param.shtml">中关村在线</td>
                     </tr>
 
-                    <tr>
-                        <td id="td-center">Xiaomi MIX 3</td>
-                        <td><a href="https://detail.zol.com.cn/1204/1203931/param.shtml">中关村在线</td>
-                    </tr> 
+                    <tr class="tr2">
+                        <td id="table1" class="table3">Xiaomi MIX 3</td>
+                        <td class="table3"><a href="https://detail.zol.com.cn/1204/1203931/param.shtml">中关村在线</td>
+                    </tr>
+                </tbody>
                 </table>
             </div>
         </div>
-        <!--Clear floating <div> style-->
+        <!-- Clear floating <div> style -->
         <div style="clear: both;"></div>
     </body>
 
