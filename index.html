@@ -2,26 +2,27 @@
 <html lang="zh-cn">
 
     <head>
+        <!-- Set UTF-8 -->
         <meta charset="utf-8" />
 
         <!-- Resetting scaling -->
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         <!-- Tablesorter files -->
-        <!-- theme file -->
+        <!-- theme -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/css/theme.default.min.css">
 
-        <!-- load jQuery and tablesorter scripts -->
+        <!-- jQuery -->
         <script src="https://code.jquery.com/jquery-latest.js"></script>
+        <!-- tablesorter main-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js"></script>
 
-        <!-- tablesorter widgets (optional) -->
+        <!-- tablesorter widgets -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.widgets.min.js"></script>
         <title>
             预选手机列表
         </title>
         <style type="text/css">
-            
             /* Head */
             body
             {
@@ -48,6 +49,13 @@
             {
                 text-align: center;
             }
+
+            .tr
+            {
+                border-top: solid 1px #cccccc;
+                border-bottom: solid 1px #cccccc;
+            }
+
 
             /* Adaptation for different screen resolutions */
             /* table style */
@@ -83,12 +91,6 @@
                 }
             }
 
-            .tr
-            {
-                border-top: solid 1px #cccccc;
-                border-bottom: solid 1px #cccccc;
-            }
-
             /* <table> */
             @media screen and (min-width: 414px) 
             { 
@@ -122,7 +124,8 @@
                     font-size: 8vw;
                 } 
             }
-            
+
+
             /* Table alignment */
             #div0
             {
