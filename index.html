@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+    <head>
+        <meta charset="utf-8" />
+
+        <!--Resetting scaling-->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <title>
+            预选手机列表
+        </title>
+        <style type="text/css">
+            
+            /* Head */
+            body
+            {
+                margin:0 auto;
+            }
+
+            p
+            {
+                text-align: center;
+            }
+
+            /* Adaptation for different screen resolutions */
+            /* <table> */
+            @media screen and (min-width: 414px) 
+            { 
+                table
+                {
+                    border-style: solid;
+                        border-width: 2px;
+                        border-color: gray;
+                }
+            } 
+
+            @media screen and (max-width: 414px) 
+            { 
+                table
+                {
+                    font-size: 4vw;
+                    border-style: solid;
+                        border-width: 2px;
+                        border-color: gray;
+                } 
+            } 
+
+            @media screen and (max-width: 320px) 
+            { 
+                table
+                {
+                    font-size: 3vw;
+                    border-style: solid;
+                        border-width: 2px;
+                        border-color: gray;
+                } 
+            }
+
+            /* <h1> */
+            @media screen and (max-width: 425px)
+            {
+                h1
+                {
+                    text-align: center;
+                    font-size: 8vw;
+                } 
+            }
+
+            @media screen and (min-width: 425px)
+            {
+                h1 
+                {
+                    text-align: center;
+                }   
+            }
+            
+            /* Table alignment */
+            #div0
+            {
+                display: inline;
+                padding: 6px;
+            }
+    
+            #div1
+            {           
+                display: flex;
+                    justify-content: center;
+                    flex-flow:row wrap;
+                    align-content: space-around;
+            }
+        </style>
+
+        <!--Dark Mode-->
+        <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+        <script>
+            function addDarkmodeWidget() 
+            {
+                new Darkmode({label:'&#x1F313;',autoMatchOsTheme:true,saveInCookies:true}).showWidget();
+            }
+            window.addEventListener('load', addDarkmodeWidget);
+        </script>
+
+    </head>
+
+    <body>
+        <h1>
+            <b>
+                预选手机列表
+            </b>
+        </h1>
+
+        <p>
+            <sub>
+            <i>
+                预算≈￥1400，全部默认出厂GMS
+            </i>
+            </sub>
+        </p>
+
+        <div id="div1">
+            <div id="div0">
+                <table id="phones" rules=none cellpadding="5" cellspacing="2">
+                    <tr>
+                        <th>设备</th>
+                        <th>价格</th>
+                        <th>容量</th>
+                        <th>备注</th>
+                    </tr>
+
+                    <tr>
+                        <td style="text-align:center">iQOO U3x</td>
+                        <td>￥1199.00</td>
+                        <td>6G + 64G</td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td style="text-align:center">OPPO A52</td>
+                        <td>￥1399.00</td>
+                        <td>8G + 128G</td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td style="text-align:center">OPPO Reno2 Z</td>
+                        <td>￥1119.00</td>
+                        <td>8G + 128G</td>
+                        <td><a href="https://item.jd.com/68910172308.html">京东二手</a></td>
+                    </tr>
+
+                    <tr>
+                        <td style="text-align:center">realme Q3</td>
+                        <td>￥1299.00</td>
+                        <td>6G + 128G</td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td style="text-align:center">Xiaomi MIX 2s</td>
+                        <td>￥859.00</td>
+                        <td>6G + 128G</td>
+                        <td><a href="https://item.jd.com/10027506717470.html">京东二手</a></td>
+                    </tr>
+
+                    <tr>
+                        <td style="text-align:center">Meizu 16th</td>
+                        <td>￥989.00</td>
+                        <td>6G + 64G</td>
+                        <td><a href="https://item.jd.com/10020193715761.html">京东二手</a></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="div0">
+                <table id="param" rules=none cellpadding="5" cellspacing="2">
+                    <tr>
+                        <th style=text-align:center; colspan="2">机型参数</th>
+                    </tr>
+
+                    <tr>
+                        <td style=text-align:center;>iQOO U3x</td>
+                        <td><a href="https://detail.zol.com.cn/1364/1363711/param.shtml">中关村在线</td>
+                    </tr>
+
+                    <tr>
+                        <td style=text-align:center;>OPPO A52</td>
+                        <td><a href="https://detail.zol.com.cn/1320/1319916/param.shtml">中关村在线</td>
+                    </tr>
+
+                    <tr>
+                        <td style=text-align:center;>OPPO Reno2 Z</td>
+                        <td><a href="https://detail.zol.com.cn/1290/1290000/param.shtml">中关村在线</td>
+                    </td>
+
+                    <tr>
+                        <td style=text-align:center;>realme Q3 5G</td>
+                        <td><a href="https://detail.zol.com.cn/1368/1367130/param.shtml">中关村在线</td>
+                    </tr>
+
+                    <tr>
+                        <td style=text-align:center;>Xiaomi MIX 2s</td>
+                        <td><a href="https://detail.zol.com.cn/1203/1202983/param.shtml">中关村在线</td>
+                    </tr>
+
+                    <tr>
+                        <td style=text-align:center;>Meizu 16th</td>
+                        <td><a href="https://detail.zol.com.cn/1213/1212228/param.shtml">中关村在线</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!--Clear floating <div> style-->
+        <div style="clear: both;"></div>
+    </body>
+
+</html>
