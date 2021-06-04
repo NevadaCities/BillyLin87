@@ -49,9 +49,7 @@
                 .p0
                 {
                     font-size: 3vw;
-                    display: flex;
-                        align-items: center;
-                        justify-content: center;
+                    display: block;
                     padding-top: 1.3vw;
                     padding-bottom: 1.3vw;
                     padding-left: unset;
@@ -197,6 +195,18 @@
                     flex-flow: row nowrap;
                     justify-content: center;
             }
+
+            .div4
+            {
+                margin: 0;
+                display: flex;
+                    justify-content: center;
+            }
+
+            dl
+            {
+                margin: 0;
+            }
         </style>
 
         <!-- Dark Mode -->
@@ -337,18 +347,19 @@
             </div>
         </div>
         <hr>
-        <dl style="text-align: center;">
-            <dt class="p0">
-                <img src="https://my.freenom.com/favicon.ico" alt="Freenom" height="16px" width="16px">&nbsp;域名由Freenom提供
-            </dt>
-            <dt class="p0">
-                <img src="https://dash.cloudflare.com/favicon.ico" alt="Cloudflare" height="16px" width="16px">&nbsp;网站加速由Cloudflare提供
-            </dt>
-            <dt class="p0">
-                <img src="GitHub-Mark-64px.png" alt="GitHub" height="16px" width="16px">&nbsp;网页由GitHub Pages托管
-            </dt>
-        </dl>
-
+        <div class="div4">
+            <dl>
+                <dt class="p0">
+                    <img src="https://my.freenom.com/favicon.ico" alt="Freenom" height="16px" width="16px">&nbsp;域名由Freenom提供
+                </dt>
+                <dt class="p0">
+                    <img src="https://dash.cloudflare.com/favicon.ico" alt="Cloudflare" height="16px" width="16px">&nbsp;网站加速由Cloudflare提供
+                </dt>
+                <dt class="p0">
+                    <img src="GitHub-Mark-64px.png" alt="GitHub" height="16px" width="16px">&nbsp;网页由GitHub Pages托管
+                </dt>
+            </dl>
+        </div>
         <div class="div3">
             <p class="p1">
                 <img src="GitHub-Mark-64px.png" alt="GitHub" height="16px" width="16px">&nbsp;<a href="https://github.com/NevadaCities" target="_blank">GitHub</a>
