@@ -49,11 +49,36 @@
                 .p0
                 {
                     font-size: 3vw;
+                    display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    padding-top: 1.3vw;
+                    padding-bottom: 1.3vw;
+                    padding-left: unset;
+                    padding-right: unset;
+                }
+            }
+
+            .p1
+            {
+                color: rgb(70, 70, 70);
+                display: inline-flex;
+                    align-items: center;
+                font-size: 4px;
+                padding-top: 2px;
+                padding-left: 4px;
+                padding-right: 4px;
+            }
+
+            @media screen and (max-width: 425px)
+            {
+                .p1
+                {
+                    font-size: 3vw;
                     padding-top: 1vw;
                     padding-bottom: 1vw;
                     padding-left: unset;
                     padding-right: unset;
-                    margin: 0;
                 }
             }
 
@@ -163,49 +188,6 @@
                     flex-flow:row nowrap;
                     justify-content: center;
                 margin: 0 auto;
-            }
-
-            @media screen and (max-width: 425px)
-            {
-                .div2
-                {           
-                    display: flex;
-                        flex-flow:column wrap;
-                        align-content: flex-start;
-                    margin: 0 auto;
-                }
-            }
-
-            @media screen and (max-width: 425px)
-            {
-                .div2
-                {
-                    width: 41vw;
-                }
-            }
-
-            @media screen and (max-width: 375px)
-            {
-                .div2
-                {
-                    width: 44vw;
-                }
-            }
-
-            @media screen and (max-width: 360px)
-            {
-                .div2
-                {
-                    width: 46vw;
-                }
-            }
-
-            @media screen and (max-width: 320px)
-            {
-                .div2
-                {
-                    width: 51vw;
-                }
             }
 
 
@@ -355,27 +337,25 @@
             </div>
         </div>
         <hr>
-        <div class="div2">
-            <p class="p0">
+        <dl style="text-align: center;">
+            <dt class="p0">
                 <img src="https://my.freenom.com/favicon.ico" alt="Freenom" height="16px" width="16px">&nbsp;域名由Freenom提供
-            </p>
-
-            <p class="p0">
+            </dt>
+            <dt class="p0">
                 <img src="https://dash.cloudflare.com/favicon.ico" alt="Cloudflare" height="16px" width="16px">&nbsp;网站加速由Cloudflare提供
-            </p>
-
-            <p class="p0">
+            </dt>
+            <dt class="p0">
                 <img src="GitHub-Mark-64px.png" alt="GitHub" height="16px" width="16px">&nbsp;网页由GitHub Pages托管
-            </p>
-        </div>
+            </dt>
+        </dl>
+
         <div class="div3">
-            <p class="p0">
+            <p class="p1">
                 <img src="GitHub-Mark-64px.png" alt="GitHub" height="16px" width="16px">&nbsp;<a href="https://github.com/NevadaCities" target="_blank">GitHub</a>
                 &nbsp;
                 <img src="https://telegram.org/favicon.ico" alt="Telegram" height="16px" width="16px">&nbsp;<a href="https://t.me/NevadaCities" target="_blank">Telegram</a>
             </p>
         </div>
-        <br>
         <!-- Clear floating <div> style -->
         <div style="clear: both;"></div>
     </body>
