@@ -8,7 +8,7 @@
         <!-- Resetting scaling -->
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-
+        <!-- Web Icon -->
         <link rel="icon" href="https://img.icons8.com/material-outlined/24/000000/phone-case.png" type="image/x-icon">
         <!-- Tablesorter files -->
         <!-- theme -->
@@ -96,6 +96,20 @@
                 }
             }
 
+            .p3
+            {
+                color: rgb(70, 70, 70);
+                font-size: unset;
+            }
+
+            @media screen and (max-width: 425px)
+            {
+                .p3
+                {
+                    font-size: 4vw;
+                }    
+            }
+
             table
             {
                 border: solid 2px gray;
@@ -120,7 +134,18 @@
 
             #table1
             {
+                color: rgb(70, 70, 70);
                 text-align: center;
+            }
+
+            .table2
+            {
+                color: rgb(70, 70, 70);
+            }
+
+            .table3
+            {
+                color: rgb(70, 70, 70);
             }
 
             @media screen and (max-width: 768px) 
@@ -215,6 +240,14 @@
                     justify-content: center;
             }
 
+            @media screen and (max-width: 425px)
+            {
+                .div3
+                {
+                    margin-bottom: 40px;
+                }
+            }
+
             .div4
             {
                 margin: 0;
@@ -225,46 +258,6 @@
             dl
             {
                 margin: 0;
-            }
-
-            #div5
-            {
-                display: flex;
-                    flex-flow: row nowrap;
-                    justify-content: center;
-            }
-
-            iframe
-            {
-                width: 640px;
-                height: 480px;
-            }
-
-            @media screen and (max-width: 425px)
-            {
-                iframe
-                {
-                    width: 400px;
-                    height: 240px;
-                }
-            }
-
-            @media screen and (max-width: 375px)
-            {
-                iframe
-                {
-                    width: 320px;
-                    height: 200px;
-                }
-            }
-
-            @media screen and (max-width: 320px)
-            {
-                iframe
-                {
-                    width: 300px;
-                    height: 180px;
-                }
             }
 
             .header
@@ -281,6 +274,45 @@
                     display: block;
                 }
             }
+
+            .div5
+            {
+                display: flex;
+                    justify-content: center;
+                margin-top: 5px;
+            }
+
+            .span
+            {
+                display: inline-flex;
+                    flex-flow: row nowrap;
+                    align-items: center;
+                border: 2px solid grey;
+                padding: 6px;
+            }
+
+            @media screen and (max-width: 425px)
+            {
+                .span
+                {
+                    flex-flow: column wrap;
+                }    
+            }
+
+            ol
+            {
+                margin: 0;
+                padding-left: 25px;
+            }
+
+            @media screen and (max-width: 425px)
+            {
+                ol
+                {
+                    padding-left: 20px;
+                }    
+            }
+
         </style>
 
         <!-- Dark Mode -->
@@ -296,7 +328,6 @@
 
     </head>
 
-    <!-- Header -->
     <header class="header">
         <h1>
             <b>
@@ -310,7 +341,6 @@
         </p>
     </header>
 
-    <!-- Body -->
     <body>
         <div id="div1">
             <div id="div0">
@@ -386,7 +416,7 @@
                 <table title="param" rules=rows>
                 <tbody>
                     <tr>
-                        <th style=text-align:center; colspan="2" class="table3">机型参数</th>
+                        <th style="text-align:center;color:unset;" colspan="2" class="table3">机型参数</th>
                     </tr>
 
                     <tr class="tr">
@@ -432,18 +462,22 @@
                 </table>
             </div>
         </div>
-
-        <p>
-            手机选购方案
-        </p>
-        <div id="div5" class="darkmode-ignore">
-            <iframe src="https://player.bilibili.com/player.html?aid=456280218&bvid=BV1C5411Y7Yf&cid=210674249&page=1&danmaku=0" scrolling="no" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+        <div class="div5">
+            <span class="span">
+            <p style="margin: 0;color:unset;" class="p3">
+                手机选购指南：
+            </p>
+            <ol>
+                <li class="p3"><a href="https://zhuanlan.zhihu.com/p/147459148" target="_blank">知乎专栏</a> By <a href="https://www.zhihu.com/people/wu-hai-25" target="_blank">Deadpool</a></li>
+                <li class="p3"><a href="https://zhuanlan.zhihu.com/p/95806258" target="_blank">知乎专栏</a> By <a href="https://www.zhihu.com/people/wu-hai-25" target="_blank">Deadpool</a></li>
+                <li class="p3"><a href="https://post.smzdm.com/p/ad2d7qon/" target="_blank">什么值得买</a> By <a href="https://zhiyou.smzdm.com/member/8456288350/" target="_blank">加内特25000</a></li>
+            </ol>
+            </span>
         </div>
         <!-- Clear floating <div> style -->
         <div style="clear: both;"></div>
     </body>
 
-    <!-- Footer -->
     <footer>
         <hr>
 
@@ -466,7 +500,7 @@
             </dl>
         </div>
 
-        <div style="margin-bottom: 40px;" class="div3">
+        <div class="div3">
             <dl>
                 <dt class="p1">
                     联系方式：
