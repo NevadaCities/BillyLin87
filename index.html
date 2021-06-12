@@ -269,6 +269,39 @@
                     margin-right: 5%;
                 }
             }
+
+            .p4
+            {
+                font-size: 15px;
+                text-align: left;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+
+            @media screen and (max-width: 425px)
+            {
+                .p4
+                {
+                    font-size: 4vw;
+                }
+            }
+
+            .div6
+            {
+                display: flex;
+                    flex-flow: column wrap;
+                    align-content: center;
+                    align-items: flex-start;
+                margin-bottom: 10px;
+            }
+
+            @media screen and (max-width: 425px)
+            {
+                .div6
+                {
+                    margin-top: 10px;
+                }
+            }
         </style>
 
         <!-- Dark Mode -->
@@ -298,6 +331,14 @@
     </header>
 
     <body>
+        <div class="div6">
+            <p class="p4">
+                建议使用Chrome,Firefox等新特性多的浏览器，
+            </p>
+            <p class="p4">
+                不建议使用QQ浏览器或者手机QQ内部打开。
+            </p>
+        </div>
         <div id="div1">
             <div id="div0">
                 <table title="phones" id="phones" class="tablesorter" rules=none>
