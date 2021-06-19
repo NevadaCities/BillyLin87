@@ -18,7 +18,19 @@
         <!-- Dark Mode -->
         <script src="res/js/darkmode-js.min.js"></script>
         <script>
-            function addDarkmodeWidget(){new Darkmode({label:'&#x1F313;',autoMatchOsTheme:true,saveInCookies:true}).showWidget();}window.addEventListener('load', addDarkmodeWidget);
+            function addDarkmodeWidget()
+                {
+                    new Darkmode(options).showWidget();
+                }
+                window.addEventListener('load',addDarkmodeWidget);
+            const options = 
+            {
+                label:'&#x1F313;',
+                mixColor:'#fff',
+                backgroundColor:'#fff',
+                autoMatchOsTheme:true,
+                saveInCookies:true
+            };
         </script>
     </head>
 
