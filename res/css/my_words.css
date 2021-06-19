@@ -1,0 +1,76 @@
+@font-face
+{
+    font-family: "Simsun";
+    src: url("res/font/simsun.woff2") format("woff2"),
+}
+
+body
+{
+    margin: 0 auto;
+    display: flex;
+        flex-flow: column nowrap;
+}
+
+@media screen and (max-width: 425px)
+{
+    body
+    {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+.div0
+{
+    display: inline-flex;
+        align-items: baseline;
+}
+
+.div1
+{
+    display: block;
+    width: 768px;
+}
+
+.div2
+{
+    display: flex;
+        justify-content: flex-start;
+}
+
+.p4
+{
+    font-size: 14px;
+    margin-top: 0;
+}
+
+.div5
+{
+    display: flex;
+        justify-content: center;
+}
+
+.p5
+{
+    font-family:  'Verdana', 'Simsun';
+    line-height: 25px;
+    word-wrap: break-word; 
+    text-align: justify;
+}
+
+@media screen and (max-width: 425px)
+{
+    .p5
+    {
+        font-size: 4vw;
+    }
+}
+
+@media screen and (max-width: 425px)
+{
+    hr
+    {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+}

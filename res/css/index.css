@@ -1,0 +1,276 @@
+body
+{
+    margin: 0 auto !important;
+    display: flex;
+        flex-flow: column wrap;
+}
+
+/* Headers */
+.header
+{
+    display: flex;
+        align-items: baseline;
+        justify-content: center;
+}
+
+@media screen and (max-width: 425px)
+{
+    .header
+    {
+        display: block;
+    }
+}
+
+/* Titles */
+h1
+{
+    text-align: left;
+    padding-right: 8px;
+}
+
+@media screen and (max-width: 425px)
+{
+    h1
+    {
+        text-align: center;
+        font-size: 8vw;
+        padding: unset;
+    } 
+}
+
+/* Paragraphs */
+p
+{
+    text-align: center;
+}
+
+.p2
+{
+    text-align: left;
+}
+
+@media screen and (max-width: 425px) 
+{
+    .p2
+    {
+        text-align: center;
+    }
+}
+
+.p3
+{
+    color: rgb(70, 70, 70);
+    font-size: unset;
+}
+
+@media screen and (max-width: 425px)
+{
+    .p3
+    {
+        font-size: 4vw;
+    }    
+}
+
+/* Tables */
+table
+{
+    border-top: solid 2px gray;
+    margin: 0 auto !important;
+}
+
+#table1
+{
+    color: rgb(70, 70, 70);
+    text-align: center;
+}
+
+.table2
+{
+    color: rgb(70, 70, 70);
+}
+
+@media screen and (max-width: 768px) 
+{
+    .table2
+    {
+        padding: 1.3vw !important;
+    }
+}
+
+@media screen and (min-width: 768px) 
+{
+    .table2
+    {
+        padding: 1vw !important;
+    }
+}
+
+@media screen and (min-width: 1200px)
+{
+    .table2
+    {
+        padding: 12px !important;
+    }
+}
+
+.table3
+{
+    color: rgb(70, 70, 70);
+}
+
+@media screen and (max-width: 768px)
+{
+    .table3
+    {
+        padding: 1vw;
+    }
+}
+
+@media screen and (min-width: 768px)
+{
+    .table3
+    {
+        padding: 0.8vw;
+    }
+}
+
+@media screen and (min-width: 1200px)
+{
+    .table3
+    {
+        padding: 10px;
+    }
+}
+
+.tr
+{
+    border-top: solid 1px #cccccc;
+    border-bottom: solid 1px #cccccc;
+}
+
+@media screen and (min-width: 414px) 
+{ 
+    table
+    {
+        font-size: unset !important;
+    }
+} 
+
+@media screen and (max-width: 414px) 
+{ 
+    table
+    {
+        font-size: 4vw !important;
+    } 
+} 
+
+@media screen and (max-width: 320px) 
+{ 
+    table
+    {
+        font-size: 3vw !important;
+    } 
+}
+
+/* Divisions */
+#div0
+{
+    display: inline-flex;
+    align-items: center;
+    padding: 5px;
+}
+
+#div1
+{           
+    display: flex;
+        flex-flow:row wrap;
+        justify-content: center;
+}
+
+.div2
+{           
+    display: flex;
+        flex-flow:row nowrap;
+        justify-content: center;
+    margin: 0 auto;
+}
+
+.div5
+{
+    display: flex;
+        justify-content: center;
+    margin-top: 5px;
+}
+
+/* Style combinations */
+.span
+{
+    display: inline-flex;
+        flex-flow: row nowrap;
+        align-items: center;
+    border-left: 2px solid grey;
+    padding: 6px;
+}
+
+@media screen and (max-width: 425px)
+{
+    .span
+    {
+        flex-flow: column wrap;
+    }    
+}
+
+.span1
+{
+    font-size: 6px;
+}
+
+@media screen and (max-width: 425px) 
+{
+    .span1
+    {
+        font-size: 3vw;
+    }    
+}
+
+@media screen and (max-width: 425px)
+{
+    hr
+    {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+.p4
+{
+    font-size: 15px;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 425px)
+{
+    .p4
+    {
+        font-size: 4vw;
+    }
+}
+
+.div6
+{
+    display: flex;
+        flex-flow: column wrap;
+        align-content: center;
+        align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 425px)
+{
+    .div6
+    {
+        margin-top: 10px;
+    }
+}
