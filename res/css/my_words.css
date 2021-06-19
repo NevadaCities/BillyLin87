@@ -1,9 +1,3 @@
-@font-face
-{
-    font-family: "Simsun";
-    src: url("res/font/simsun.woff2") format("woff2"),
-}
-
 body
 {
     margin: 0 auto;
